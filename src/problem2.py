@@ -14,7 +14,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
     problem2a_testing()
     run_test_problem2b()
-    # run_test_problem2c()
+    run_test_problem2c()
 
 
 def problem2a_testing():
