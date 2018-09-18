@@ -149,6 +149,7 @@ def problem3(point, length, delta, window):
 
     window.render()
 
+
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
