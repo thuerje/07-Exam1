@@ -2,8 +2,8 @@
 Exam 1, problem 3.
 
 Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
-         Amanda Stouder, their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Amanda Stouder, their colleagues and Jess Thuer.
+"""  # DONE PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -103,6 +103,51 @@ def problem3(point, length, delta, window):
     #          Tests have been written for you (above).
     # --------------------------------------------------------------------------
 
+    point.attach_to(window)
+
+    p1 = point
+    p2v = rg.Point(point.x , point.y + length)
+    p2h = rg.Point(point.x + length , point.y)
+
+    linev = rg.Line(p1, p2v)
+    linev.thickness = 3
+    linev.color = 'black'
+    linev.attach_to(window)
+
+    lineh = rg.Line(p1, p2h)
+    lineh.attach_to(window)
+    lineh.thickness = 3
+    lineh.color = 'magenta'
+
+    n = length//delta
+    k = 2
+
+    for _ in range (n):
+        k = k + 1
+        if not k % 2 == 0:
+            p1 = rg.Point(p1.x , p1.y + delta)
+            p2h = rg.Point(p2h.x + delta, p2h.y + delta)
+            line = rg.Line(p1, p2h)
+            line.thickness = 3
+            line.color = 'cyan'
+            line.attach_to(window)
+        else:
+            if not k // 2 == 1:
+                p1 = rg.Point(p1.x , p1.y + delta)
+                p2h = rg.Point(p2h.x + delta, p2h.y + delta)
+                line = rg.Line(p1, p2h)
+                line.thickness = 3
+                line.color = 'spring green'
+                line.attach_to(window)
+            else:
+                p1 = rg.Point(p1.x , p1.y + delta)
+                p2h = rg.Point(p2h.x + delta, p2h.y + delta)
+                line = rg.Line(p1, p2h)
+                line.thickness = 3
+                line.color = 'magenta'
+                line.attach_to(window)
+
+    window.render()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

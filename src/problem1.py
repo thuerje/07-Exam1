@@ -10,7 +10,7 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    # run_test_problem1a()
+    run_test_problem1a()
     run_test_problem1b()
 
 
@@ -189,7 +189,6 @@ def problem1b(point, win, width, height, color):
     elipse.fill_color = color
     elipse.attach_to(win)
     win.render()
-
 
 # ------------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
