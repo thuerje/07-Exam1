@@ -2,8 +2,8 @@
 Exam 1, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
-         Amanda Stouder, their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Amanda Stouder, their colleagues and Jess Thuer.
+"""  # DONE PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
 import time
@@ -13,8 +13,8 @@ import math
 def main():
     """ Calls the   TEST   functions in this module. """
     problem2a_testing()
-    run_test_problem2b()
-    run_test_problem2c()
+    # run_test_problem2b()
+    # run_test_problem2c()
 
 
 def problem2a_testing():
